@@ -14,14 +14,24 @@ export const useGuestsSection = () => {
 		setForm(newState);
 	};
 
-	const updateGuest = (id: string, key: string, value: number | string) => {};
+	const updateGuest = <T extends keyof OrderingDomainModel.Guest>(
+		id: string,
+		key: T,
+		value: OrderingDomainModel.Guest[T]
+	) => {
+		const newState = guestForm.current.updateGuest(form, id, key, value);
+		setForm(newState);
+	};
 
-	const changeOrganizer = () => {};
+	const changeOrganizer = (id: string) => {
+		const newState = guestForm.current.changeOrganizer(form, id);
+		setForm(newState);
+	};
 
 	const onNext = () => {};
 
 	const isSubmittable = () => {
-		return false;
+		return guestForm.current.isSubmittable(form);
 	};
 
 	const { idProvider } = useDependencies();
