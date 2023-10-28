@@ -15,4 +15,8 @@ export class GuestForm {
 			},
 		];
 	}
+
+	removeGuest(state: OrderingDomainModel.Guest[], id: string) {
+		return state.filter((guest) => guest.id !== id);
+	}
 }
