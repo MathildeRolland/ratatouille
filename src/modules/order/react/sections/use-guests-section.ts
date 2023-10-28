@@ -5,13 +5,13 @@ import { useRef, useState } from 'react';
 
 export const useGuestsSection = () => {
 	const addGuest = () => {
-		const newState = guestForm.current.addGuest(guests);
-		setGuests(newState);
+		const newState = guestForm.current.addGuest(form);
+		setForm(newState);
 	};
 
 	const removeGuest = (id: string) => {
-		const newState = guestForm.current.removeGuest(guests, id);
-		setGuests(newState);
+		const newState = guestForm.current.removeGuest(form, id);
+		setForm(newState);
 	};
 
 	const updateGuest = (id: string, key: string, value: number | string) => {};
@@ -26,7 +26,10 @@ export const useGuestsSection = () => {
 
 	const { idProvider } = useDependencies();
 	const guestForm = useRef(new GuestForm(idProvider));
-	const [guests, setGuests] = useState<OrderingDomainModel.Guest[]>([]);
+	const [form, setForm] = useState<OrderingDomainModel.Form>({
+		guests: [],
+		organizerId: null,
+	});
 
 	return {
 		addGuest,
@@ -35,6 +38,6 @@ export const useGuestsSection = () => {
 		changeOrganizer,
 		onNext,
 		isSubmittable: isSubmittable(),
-		guests,
+		form,
 	};
 };
