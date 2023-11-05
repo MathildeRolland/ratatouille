@@ -10,6 +10,12 @@ export const fetchTables = async (
 	getState: AppGetState,
 	dependencies: Dependencies
 ) => {
-	const tables = await dependencies.tableGateway.getTables();
-	dispatch(orderingSlice.actions.storeTables(tables));
+	dispatch(orderingSlice.actions.handleTablesLoading());
+
+	try {
+		const tables = await dependencies.tableGateway.getTables();
+		dispatch(orderingSlice.actions.storeTables(tables));
+	} catch (error) {
+		dispatch(orderingSlice.actions.handleTablesError(error.message));
+	}
 };
