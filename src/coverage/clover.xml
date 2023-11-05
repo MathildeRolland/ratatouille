@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1699202056339" clover="3.2.0">
-  <project timestamp="1699202056339" name="All files">
-    <metrics statements="288" coveredstatements="275" conditionals="50" coveredconditionals="49" methods="21" coveredmethods="19" elements="359" coveredelements="343" complexity="0" loc="288" ncloc="288" packages="6" files="8" classes="8"/>
+<coverage generated="1699203538446" clover="3.2.0">
+  <project timestamp="1699203538446" name="All files">
+    <metrics statements="306" coveredstatements="293" conditionals="57" coveredconditionals="55" methods="25" coveredmethods="23" elements="388" coveredelements="371" complexity="0" loc="306" ncloc="306" packages="7" files="10" classes="10"/>
     <package name="order.core.form">
       <metrics statements="63" coveredstatements="63" conditionals="25" coveredconditionals="25" methods="6" coveredmethods="6"/>
       <file name="guest.form.ts" path="C:\Users\Admin\Documents\dev\ancyr_academy\ratatouille-starter\src\modules\order\core\form\guest.form.ts">
@@ -178,6 +178,33 @@
         <line num="49" count="1" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="order.core.testing">
+      <metrics statements="18" coveredstatements="18" conditionals="7" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <file name="failing.table-gateway.ts" path="C:\Users\Admin\Documents\dev\ancyr_academy\ratatouille-starter\src\modules\order\core\testing\failing.table-gateway.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="stub.table-gateway.ts" path="C:\Users\Admin\Documents\dev\ancyr_academy\ratatouille-starter\src\modules\order\core\testing\stub.table-gateway.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
     </package>
     <package name="order.core.usecases">
