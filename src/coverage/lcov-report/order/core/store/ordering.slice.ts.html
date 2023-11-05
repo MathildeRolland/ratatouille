@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for store/store.ts</title>
+    <title>Code coverage report for order/core/store/ordering.slice.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">store</a> store.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">order/core/store</a> ordering.slice.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>42/42</span>
+                <span class='fraction'>38/38</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>42/42</span>
+                <span class='fraction'>38/38</span>
             </div>
         
             
@@ -101,11 +101,7 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a>
-<a name='L42'></a><a href='#L42'>42</a>
-<a name='L43'></a><a href='#L43'>43</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -124,71 +120,63 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useDispatch } from 'react-redux';
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 &nbsp;
-import {
-	combineReducers,
-	configureStore,
-	createListenerMiddleware,
-} from '@reduxjs/toolkit';
-import { Dependencies } from '@ratatouille/modules/store/dependencies';
-import { orderingReducer } from '@ratatouille/modules/order/core/store/ordering.slice';
-import { registerOrderingStepListener } from '@ratatouille/modules/order/core/store/ordering-step.listener';
+export type OrderingState = {
+	step: OrderingDomainModel.Step;
+	form: OrderingDomainModel.Form;
 &nbsp;
-const reducers = combineReducers({ ordering: orderingReducer });
-&nbsp;
-export type AppStore = ReturnType&lt;typeof createStore&gt;;
-export type AppState = ReturnType&lt;typeof reducers&gt;;
-export type AppDispatch = AppStore['dispatch'];
-export type AppGetState = AppStore['getState'];
-&nbsp;
-export const createStore = (config: {
-	initialState?: AppState;
-	dependencies: Dependencies;
-}) =&gt; {
-	const store = configureStore({
-		preloadedState: config<span class="branch-0 cbranch-no" title="branch not covered" >?.i</span>nitialState,
-		reducer: reducers,
-		devTools: true,
-		middleware: (getDefaultMiddleware) =&gt; {
-			const listener = createListenerMiddleware();
-			registerOrderingStepListener(listener);
-&nbsp;
-			return getDefaultMiddleware({
-				thunk: {
-					extraArgument: config.dependencies,
-				},
-			}).prepend(listener.middleware);
-		},
-	});
-&nbsp;
-	return store;
+	availableTables: { data: OrderingDomainModel.Table[] };
 };
 &nbsp;
-export const useAppDispatch = <span class="fstat-no" title="function not covered" >() =&gt; useDispatch&lt;</span>AppDispatch&gt;();
+export const initialState: OrderingState = {
+	step: OrderingDomainModel.Step.GUESTS,
+	form: { guests: [], organizerId: null },
+&nbsp;
+	availableTables: { data: [] },
+};
+&nbsp;
+export const orderingSlice = createSlice({
+	name: 'ordering',
+	initialState,
+	reducers: {
+		setStep: (state, action: PayloadAction&lt;OrderingDomainModel.Step&gt;) =&gt; {
+			state.step = OrderingDomainModel.Step.TABLE;
+		},
+		storeTables: (
+			state,
+			action: PayloadAction&lt;OrderingDomainModel.Table[]&gt;
+		) =&gt; {
+			state.availableTables.data = action.payload;
+		},
+		chooseGuests(state, action: PayloadAction&lt;OrderingDomainModel.Form&gt;) {
+			state.form = action.payload;
+		},
+	},
+});
+&nbsp;
+export const orderingReducer = orderingSlice.reducer;
+export const orderingActions = orderingSlice.actions;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -198,14 +186,14 @@ export const useAppDispatch = <span class="fstat-no" title="function not covered
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
                 at 2023-11-05T16:17:19.090Z
             </div>
-        <script src="../prettify.js"></script>
+        <script src="../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
     </body>
 </html>
     
