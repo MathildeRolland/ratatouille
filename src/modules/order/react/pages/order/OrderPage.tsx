@@ -5,7 +5,7 @@ import { GuestsSection } from '@ratatouille/modules/order/react/sections/guest/G
 import { MealsSection } from '@ratatouille/modules/order/react/sections/meals/mealsSection';
 import { ReservedSection } from '@ratatouille/modules/order/react/sections/reserved/ReservedSection';
 import { SummarySection } from '@ratatouille/modules/order/react/sections/summary/SummarySection';
-import { TableSection } from '@ratatouille/modules/order/react/sections/table/tableSection';
+import { TableSection } from '@ratatouille/modules/order/react/sections/table/TableSection';
 import { AppState } from '@ratatouille/modules/store/store';
 import React from 'react';
 import { useSelector } from 'react-redux';
