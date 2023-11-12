@@ -2,6 +2,18 @@ import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/order
 
 export class GuestFactory {
 	static create(data?: Partial<OrderingDomainModel.Guest>) {
-		return { id: '', firstName: '', lastName: '', age: 24, ...data };
+		return {
+			id: '',
+			firstName: '',
+			lastName: '',
+			age: 24,
+			meals: {
+				entry: null,
+				mainCourse: null,
+				dessert: null,
+				drink: null,
+			},
+			...data,
+		};
 	}
 }
