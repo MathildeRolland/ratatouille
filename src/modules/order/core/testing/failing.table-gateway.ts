@@ -2,7 +2,7 @@ import { ITableGateway } from '@ratatouille/modules/order/core/gateway/table.gat
 import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
 
 export class FailingTableGateway implements ITableGateway {
-	getTables(): Promise<OrderingDomainModel.Table[]> {
+	async getTables(): Promise<OrderingDomainModel.Table[]> {
 		throw new Error('Failed to fetch data');
 	}
 }

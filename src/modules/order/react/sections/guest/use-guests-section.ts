@@ -46,6 +46,7 @@ export const useGuestsSection = () => {
 	const [form, setForm] = useState<OrderingDomainModel.Form>({
 		guests: initialForm.guests,
 		organizerId: initialForm.organizerId,
+		tableId: initialForm.tableId,
 	});
 
 	return {

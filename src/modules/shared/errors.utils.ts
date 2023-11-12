@@ -1,4 +1,4 @@
-export const extractErroMessage = (e: unknown): string => {
+export const extractErrorMessage = (e: unknown): string => {
 	if (e instanceof Error) {
 		return e.message;
 	}

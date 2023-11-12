@@ -14,7 +14,7 @@ export type OrderingState = {
 
 export const initialState: OrderingState = {
 	step: OrderingDomainModel.Step.GUESTS,
-	form: { guests: [], organizerId: null },
+	form: { guests: [], organizerId: null, tableId: null },
 
 	availableTables: { status: 'idle', error: null, data: [] },
 };
@@ -43,6 +43,9 @@ export const orderingSlice = createSlice({
 		},
 		chooseGuests(state, action: PayloadAction<OrderingDomainModel.Form>) {
 			state.form = action.payload;
+		},
+		chooseTable(state, action: PayloadAction<string>) {
+			state.form.tableId = action.payload;
 		},
 	},
 });
