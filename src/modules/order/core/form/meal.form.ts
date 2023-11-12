@@ -80,4 +80,43 @@ export class MealForm {
 			guest.meals.entry = mealId;
 		});
 	}
+
+	assignMainCourse(
+		form: OrderingDomainModel.Form,
+		guestId: string,
+		mealId: OrderingDomainModel.MealId | null
+	) {
+		return produce(form, (draft) => {
+			const guest = draft.guests.find((guest) => guest.id === guestId);
+			if (!guest) return;
+
+			guest.meals.mainCourse = mealId;
+		});
+	}
+
+	assignDessert(
+		form: OrderingDomainModel.Form,
+		guestId: string,
+		mealId: OrderingDomainModel.MealId | null
+	) {
+		return produce(form, (draft) => {
+			const guest = draft.guests.find((guest) => guest.id === guestId);
+			if (!guest) return;
+
+			guest.meals.dessert = mealId;
+		});
+	}
+
+	assignDrink(
+		form: OrderingDomainModel.Form,
+		guestId: string,
+		mealId: OrderingDomainModel.MealId | null
+	) {
+		return produce(form, (draft) => {
+			const guest = draft.guests.find((guest) => guest.id === guestId);
+			if (!guest) return;
+
+			guest.meals.drink = mealId;
+		});
+	}
 }
