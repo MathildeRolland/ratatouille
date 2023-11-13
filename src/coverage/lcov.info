@@ -126,8 +126,9 @@ FN:71,Object.<anonymous>.MealForm.assignEntry
 FN:84,Object.<anonymous>.MealForm.assignMainCourse
 FN:97,Object.<anonymous>.MealForm.assignDessert
 FN:110,Object.<anonymous>.MealForm.assignDrink
-FNF:11
-FNH:11
+FN:123,Object.<anonymous>.MealForm.isSubmittable
+FNF:12
+FNH:12
 FNDA:1,MealForm
 FNDA:64,Object.<anonymous>.MealForm.isMealType
 FNDA:16,Object.<anonymous>.MealForm.hasRequiredAge
@@ -139,6 +140,7 @@ FNDA:3,Object.<anonymous>.MealForm.assignEntry
 FNDA:3,Object.<anonymous>.MealForm.assignMainCourse
 FNDA:3,Object.<anonymous>.MealForm.assignDessert
 FNDA:3,Object.<anonymous>.MealForm.assignDrink
+FNDA:2,Object.<anonymous>.MealForm.isSubmittable
 DA:1,1
 DA:2,1
 DA:3,1
@@ -261,8 +263,12 @@ DA:119,2
 DA:120,3
 DA:121,3
 DA:122,1
-LF:122
-LH:122
+DA:123,1
+DA:124,2
+DA:125,2
+DA:126,1
+LF:126
+LH:126
 BRDA:4,0,0,1
 BRDA:4,1,0,1
 BRDA:5,2,0,64
@@ -300,8 +306,10 @@ BRDA:115,33,0,3
 BRDA:117,34,0,1
 BRDA:118,35,0,2
 BRDA:116,36,0,4
-BRF:37
-BRH:37
+BRDA:123,37,0,2
+BRDA:124,38,0,2
+BRF:39
+BRH:39
 end_of_record
 TN:
 SF:src\modules\order\core\model\ordering.domain-model.ts

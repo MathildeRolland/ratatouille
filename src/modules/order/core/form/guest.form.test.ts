@@ -227,6 +227,7 @@ describe('Is submittable', () => {
 		const withOrganizerState = {
 			organizerId: '1',
 			guests: [{ ...johnDoe, ...guest }],
+			tableId: null,
 		};
 		const isSubmittable = form.isSubmittable(withOrganizerState);
 		expect(isSubmittable).toEqual(false);
