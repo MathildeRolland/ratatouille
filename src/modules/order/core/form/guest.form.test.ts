@@ -27,14 +27,31 @@ const janeDoe = GuestFactory.create({
 const emptyInitialState: OrderingDomainModel.Form = {
 	guests: [],
 	organizerId: null,
+	tableId: null,
 };
 const stateWithOneUser: OrderingDomainModel.Form = {
 	guests: [johnDoe],
 	organizerId: null,
+	tableId: null,
 };
 const stateWithTwoUsers: OrderingDomainModel.Form = {
-	guests: [johnDoe, { id: '2', firstName: 'Jane', lastName: 'Doe', age: 24 }],
+	guests: [
+		johnDoe,
+		{
+			id: '2',
+			firstName: 'Jane',
+			lastName: 'Doe',
+			age: 24,
+			meals: {
+				entry: null,
+				mainCourse: null,
+				dessert: null,
+				drink: null,
+			},
+		},
+	],
 	organizerId: null,
+	tableId: null,
 };
 
 const form = new GuestForm(idProvider);
@@ -44,7 +61,18 @@ describe('Add a guest', () => {
 		const state = form.addGuest(emptyInitialState);
 
 		expect(state.guests).toEqual([
-			{ id: '1', firstName: 'John', lastName: 'Doe', age: 0 },
+			{
+				id: '1',
+				firstName: 'John',
+				lastName: 'Doe',
+				age: 0,
+				meals: {
+					entry: null,
+					mainCourse: null,
+					dessert: null,
+					drink: null,
+				},
+			},
 		]);
 	});
 
@@ -52,8 +80,30 @@ describe('Add a guest', () => {
 		const state = form.addGuest(stateWithOneUser);
 
 		expect(state.guests).toEqual([
-			{ id: '1', firstName: 'John', lastName: 'Doe', age: 24 },
-			{ id: '1', firstName: 'John', lastName: 'Doe', age: 0 },
+			{
+				id: '1',
+				firstName: 'John',
+				lastName: 'Doe',
+				age: 24,
+				meals: {
+					entry: null,
+					mainCourse: null,
+					dessert: null,
+					drink: null,
+				},
+			},
+			{
+				id: '1',
+				firstName: 'John',
+				lastName: 'Doe',
+				age: 0,
+				meals: {
+					entry: null,
+					mainCourse: null,
+					dessert: null,
+					drink: null,
+				},
+			},
 		]);
 	});
 
@@ -61,9 +111,42 @@ describe('Add a guest', () => {
 		const state = form.addGuest(stateWithTwoUsers);
 
 		expect(state.guests).toEqual([
-			{ id: '1', firstName: 'John', lastName: 'Doe', age: 24 },
-			{ id: '2', firstName: 'Jane', lastName: 'Doe', age: 24 },
-			{ id: '1', firstName: 'John', lastName: 'Doe', age: 0 },
+			{
+				id: '1',
+				firstName: 'John',
+				lastName: 'Doe',
+				age: 24,
+				meals: {
+					entry: null,
+					mainCourse: null,
+					dessert: null,
+					drink: null,
+				},
+			},
+			{
+				id: '2',
+				firstName: 'Jane',
+				lastName: 'Doe',
+				age: 24,
+				meals: {
+					entry: null,
+					mainCourse: null,
+					dessert: null,
+					drink: null,
+				},
+			},
+			{
+				id: '1',
+				firstName: 'John',
+				lastName: 'Doe',
+				age: 0,
+				meals: {
+					entry: null,
+					mainCourse: null,
+					dessert: null,
+					drink: null,
+				},
+			},
 		]);
 	});
 });
@@ -82,7 +165,18 @@ describe('Removing a guest', () => {
 	it('when there is two users, only the user with ID 1 should be removed', () => {
 		const state = form.removeGuest(stateWithTwoUsers, '1');
 		expect(state.guests).toEqual([
-			{ id: '2', firstName: 'Jane', lastName: 'Doe', age: 24 },
+			{
+				id: '2',
+				firstName: 'Jane',
+				lastName: 'Doe',
+				age: 24,
+				meals: {
+					entry: null,
+					mainCourse: null,
+					dessert: null,
+					drink: null,
+				},
+			},
 		]);
 	});
 	it('when I remove an organizer, it should set the organizerId to null', () => {
