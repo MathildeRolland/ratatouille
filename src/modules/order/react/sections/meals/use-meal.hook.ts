@@ -63,9 +63,7 @@ export const useMeal = () => {
 	}
 
 	function onNext() {
-		dispatch(
-			orderingSlice.actions.setStep(OrderingDomainModel.Step.SUMMARY)
-		);
+		dispatch(orderingSlice.actions.chooseMeal(form));
 	}
 	function onPrevious() {
 		dispatch(orderingSlice.actions.setStep(OrderingDomainModel.Step.TABLE));
