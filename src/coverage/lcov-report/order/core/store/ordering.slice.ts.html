@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">77.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>72/72</span>
+                <span class='fraction'>58/75</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>2/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">77.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>72/72</span>
+                <span class='fraction'>58/75</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -135,7 +135,10 @@
 <a name='L70'></a><a href='#L70'>70</a>
 <a name='L71'></a><a href='#L71'>71</a>
 <a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -167,37 +170,40 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -241,38 +247,41 @@ export const orderingSlice = createSlice({
 		setStep: (state, action: PayloadAction&lt;OrderingDomainModel.Step&gt;) =&gt; {
 			state.step = action.payload;
 		},
-		handleTablesLoading: (state) =&gt; {
-			state.availableTables.status = 'loading';
-			state.availableTables.error = null;
+		handleTablesLoading: <span class="fstat-no" title="function not covered" >(state) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >			state.availableTables.status = 'loading';</span>
+<span class="cstat-no" title="statement not covered" >			state.availableTables.error = null;</span>
 		},
-		handleTablesError: (state, action: PayloadAction&lt;string&gt;) =&gt; {
-			state.availableTables.status = 'error';
-			state.availableTables.error = action.payload;
+		handleTablesError: <span class="fstat-no" title="function not covered" >(state, action: PayloadAction&lt;string&gt;) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >			state.availableTables.status = 'error';</span>
+<span class="cstat-no" title="statement not covered" >			state.availableTables.error = action.payload;</span>
 		},
-		storeTables: (
-			state,
-			action: PayloadAction&lt;OrderingDomainModel.Table[]&gt;
-		) =&gt; {
-			state.availableTables.data = action.payload;
-			state.availableTables.status = 'success';
+		storeTables: <span class="fstat-no" title="function not covered" >(</span>
+<span class="cstat-no" title="statement not covered" >			state,</span>
+<span class="cstat-no" title="statement not covered" >			action: PayloadAction&lt;OrderingDomainModel.Table[]&gt;</span>
+<span class="cstat-no" title="statement not covered" >		) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >			state.availableTables.data = action.payload;</span>
+<span class="cstat-no" title="statement not covered" >			state.availableTables.status = 'success';</span>
 		},
-		chooseGuests(state, action: PayloadAction&lt;OrderingDomainModel.Form&gt;) {
+		chooseGuests<span class="fstat-no" title="function not covered" >(state, action: PayloadAction&lt;OrderingDomainModel.Form&gt;) {</span>
+<span class="cstat-no" title="statement not covered" >			state.form = action.payload;</span>
+		},
+		chooseTable<span class="fstat-no" title="function not covered" >(state, action: PayloadAction&lt;string&gt;) {</span>
+<span class="cstat-no" title="statement not covered" >			state.form.tableId = action.payload;</span>
+		},
+		storeMeals<span class="fstat-no" title="function not covered" >(state, action: PayloadAction&lt;OrderingDomainModel.Meal[]&gt;) {</span>
+<span class="cstat-no" title="statement not covered" >			state.availableMeals.data = action.payload;</span>
+<span class="cstat-no" title="statement not covered" >			state.availableMeals.status = 'success';</span>
+		},
+		handleMealsLoading<span class="fstat-no" title="function not covered" >(state) {</span>
+<span class="cstat-no" title="statement not covered" >			state.availableMeals.status = 'loading';</span>
+<span class="cstat-no" title="statement not covered" >			state.availableMeals.error = null;</span>
+		},
+		handleMealsError<span class="fstat-no" title="function not covered" >(state, action: PayloadAction&lt;string&gt;) {</span>
+<span class="cstat-no" title="statement not covered" >			state.availableMeals.status = 'error';</span>
+<span class="cstat-no" title="statement not covered" >			state.availableMeals.error = action.payload;</span>
+		},
+		chooseMeal(state, action: PayloadAction&lt;OrderingDomainModel.Form&gt;) {
 			state.form = action.payload;
-		},
-		chooseTable(state, action: PayloadAction&lt;string&gt;) {
-			state.form.tableId = action.payload;
-		},
-		storeMeals(state, action: PayloadAction&lt;OrderingDomainModel.Meal[]&gt;) {
-			state.availableMeals.data = action.payload;
-			state.availableMeals.status = 'success';
-		},
-		handleMealsLoading(state) {
-			state.availableMeals.status = 'loading';
-			state.availableMeals.error = null;
-		},
-		handleMealsError(state, action: PayloadAction&lt;string&gt;) {
-			state.availableMeals.status = 'error';
-			state.availableMeals.error = action.payload;
 		},
 	},
 });
@@ -286,7 +295,7 @@ export const orderingActions = orderingSlice.actions;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-11-19T12:14:18.334Z
+                at 2023-11-19T14:18:01.893Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
