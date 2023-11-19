@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1700410377129" clover="3.2.0">
-  <project timestamp="1700410377129" name="All files">
-    <metrics statements="458" coveredstatements="366" conditionals="34" coveredconditionals="29" methods="40" coveredmethods="19" elements="532" coveredelements="414" complexity="0" loc="458" ncloc="458" packages="8" files="15" classes="15"/>
+<coverage generated="1700410461461" clover="3.2.0">
+  <project timestamp="1700410461461" name="All files">
+    <metrics statements="466" coveredstatements="381" conditionals="39" coveredconditionals="32" methods="41" coveredmethods="22" elements="546" coveredelements="435" complexity="0" loc="466" ncloc="466" packages="8" files="15" classes="15"/>
     <package name="core">
       <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
       <file name="stub.id-provider.ts" path="C:\Users\Admin\Documents\dev\ancyr_academy\ratatouille-starter\src\modules\core\stub.id-provider.ts">
@@ -72,9 +72,9 @@
       </file>
     </package>
     <package name="order.core.store">
-      <metrics statements="157" coveredstatements="117" conditionals="5" coveredconditionals="5" methods="19" coveredmethods="5"/>
+      <metrics statements="165" coveredstatements="132" conditionals="10" coveredconditionals="8" methods="20" coveredmethods="8"/>
       <file name="fetcher.listener.ts" path="C:\Users\Admin\Documents\dev\ancyr_academy\ratatouille-starter\src\modules\order\core\store\fetcher.listener.ts">
-        <metrics statements="28" coveredstatements="16" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <metrics statements="28" coveredstatements="22" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -87,25 +87,25 @@
         <line num="10" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
+        <line num="13" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="19" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
         <line num="26" count="4" type="stmt"/>
         <line num="27" count="4" type="stmt"/>
         <line num="28" count="4" type="stmt"/>
       </file>
       <file name="ordering-step.listener.ts" path="C:\Users\Admin\Documents\dev\ancyr_academy\ratatouille-starter\src\modules\order\core\store\ordering-step.listener.ts">
-        <metrics statements="34" coveredstatements="25" conditionals="1" coveredconditionals="1" methods="4" coveredmethods="1"/>
+        <metrics statements="43" coveredstatements="34" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -140,9 +140,18 @@
         <line num="32" count="4" type="stmt"/>
         <line num="33" count="4" type="stmt"/>
         <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
       </file>
       <file name="ordering.slice.ts" path="C:\Users\Admin\Documents\dev\ancyr_academy\ratatouille-starter\src\modules\order\core\store\ordering.slice.ts">
-        <metrics statements="95" coveredstatements="76" conditionals="3" coveredconditionals="3" methods="13" coveredmethods="3"/>
+        <metrics statements="94" coveredstatements="76" conditionals="4" coveredconditionals="4" methods="13" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -184,8 +193,8 @@
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="42" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
@@ -237,7 +246,6 @@
         <line num="92" count="1" type="stmt"/>
         <line num="93" count="1" type="stmt"/>
         <line num="94" count="1" type="stmt"/>
-        <line num="95" count="1" type="stmt"/>
       </file>
     </package>
     <package name="order.core.testing">

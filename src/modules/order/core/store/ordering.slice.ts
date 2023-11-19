@@ -86,7 +86,6 @@ export const orderingSlice = createSlice({
 		},
 		handleReservationSuccess(state) {
 			state.reservation = { status: 'success' };
-			state.step = OrderingDomainModel.Step.RESERVED;
 		},
 	},
 });
