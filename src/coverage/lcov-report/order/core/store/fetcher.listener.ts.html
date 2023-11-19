@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.57% </span>
+                <span class="strong">57.14% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/28</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>16/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.57% </span>
+                <span class="strong">50% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">57.14% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/28</span>
+                <span class='fraction'>16/28</span>
             </div>
         
             
@@ -99,26 +99,26 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ListenerMiddlewareInstance } from '@reduxjs/toolkit';
 &nbsp;
 import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
@@ -131,19 +131,19 @@ export const registerFetcherListeners = (
 ) =&gt; {
 	listener.startListening({
 		actionCreator: orderingSlice.actions.setStep,
-		effect: (action, api) =&gt; {
-			switch (action.payload) {
-<span class="branch-0 cbranch-no" title="branch not covered" >				case OrderingDomainModel.Step.TABLE: {</span>
+		effect: <span class="fstat-no" title="function not covered" >(action, api) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >			switch (action.payload) {</span>
+<span class="cstat-no" title="statement not covered" >				case OrderingDomainModel.Step.TABLE: {</span>
 <span class="cstat-no" title="statement not covered" >					api.dispatch(fetchTables as any);</span>
 <span class="cstat-no" title="statement not covered" >					break;</span>
 <span class="cstat-no" title="statement not covered" >				}</span>
-<span class="branch-0 cbranch-no" title="branch not covered" >				case OrderingDomainModel.Step.MEALS: {</span>
+<span class="cstat-no" title="statement not covered" >				case OrderingDomainModel.Step.MEALS: {</span>
 <span class="cstat-no" title="statement not covered" >					api.dispatch(fetchMeals as any);</span>
 <span class="cstat-no" title="statement not covered" >					break;</span>
 <span class="cstat-no" title="statement not covered" >				}</span>
-				default:
-					break;
-			}
+<span class="cstat-no" title="statement not covered" >				default:</span>
+<span class="cstat-no" title="statement not covered" >					break;</span>
+<span class="cstat-no" title="statement not covered" >			}</span>
 		},
 	});
 };
@@ -154,7 +154,7 @@ export const registerFetcherListeners = (
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-11-19T14:18:01.893Z
+                at 2023-11-19T16:12:57.089Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

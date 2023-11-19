@@ -1,5 +1,6 @@
 import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
 import { orderingSlice } from '@ratatouille/modules/order/core/store/ordering.slice';
+import { reserve } from '@ratatouille/modules/order/core/usecases/reserve.usecase';
 import { AppState, useAppDispatch } from '@ratatouille/modules/store/store';
 import { useSelector } from 'react-redux';
 
@@ -62,7 +63,7 @@ const selectSummary = (state: AppState): Summary => {
 
 export const useSummary = () => {
 	function onNext() {
-		// Terminer le flow de réservation de table
+		dispatch(reserve());
 	}
 
 	function onPrevious() {
