@@ -1,13 +1,8 @@
 import { IIDProvider } from '@ratatouille/modules/core/idProvider';
+import { StubIDProvider } from '@ratatouille/modules/core/stub.id-provider';
 import { GuestForm } from '@ratatouille/modules/order/core/form/guest.form';
 import { GuestFactory } from '@ratatouille/modules/order/core/model/guest.factory';
 import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
-
-class StubIDProvider implements IIDProvider {
-	generate(): string {
-		return '1';
-	}
-}
 
 const idProvider = new StubIDProvider();
 

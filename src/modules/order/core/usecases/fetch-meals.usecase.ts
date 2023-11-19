@@ -3,19 +3,19 @@ import { extractErrorMessage } from '@ratatouille/modules/shared/errors.utils';
 import { Dependencies } from '@ratatouille/modules/store/dependencies';
 import { AppDispatch, AppGetState } from '@ratatouille/modules/store/store';
 
-export const fetchTables = async (
+export const fetchMeals = async (
 	dispatch: AppDispatch,
 	_: AppGetState,
 	dependencies: Dependencies
 ) => {
-	dispatch(orderingSlice.actions.handleTablesLoading());
+	dispatch(orderingSlice.actions.handleMealsLoading());
 
 	try {
-		const tables = await dependencies.tableGateway.getTables();
-		dispatch(orderingSlice.actions.storeTables(tables));
+		const meals = await dependencies.mealGateway.getMeals();
+		dispatch(orderingSlice.actions.storeMeals(meals));
 	} catch (error) {
 		dispatch(
-			orderingSlice.actions.handleTablesError(extractErrorMessage(error))
+			orderingSlice.actions.handleMealsError(extractErrorMessage(error))
 		);
 	}
 };
