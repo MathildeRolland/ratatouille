@@ -9,6 +9,7 @@ describe('Choose guests', () => {
 		const form: OrderingDomainModel.Form = {
 			guests: [GuestFactory.create({ id: '1' })],
 			organizerId: null,
+			tableId: null,
 		};
 
 		store.dispatch(chooseGuests(form));

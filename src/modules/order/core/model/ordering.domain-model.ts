@@ -47,4 +47,29 @@ export namespace OrderingDomainModel {
 		title: string;
 		capacity: number;
 	};
+
+	export type State = {
+		step: OrderingDomainModel.Step;
+		form: OrderingDomainModel.Form;
+
+		availableTables: {
+			status: 'idle' | 'loading' | 'success' | 'error';
+			error: string | null;
+			data: OrderingDomainModel.Table[];
+		};
+		availableMeals: {
+			status: 'idle' | 'loading' | 'success' | 'error';
+			error: string | null;
+			data: OrderingDomainModel.Meal[];
+		};
+		reservation: ReservationStatus;
+	};
+
+	export type ReservationStatus =
+		| {
+				status: 'idle';
+		  }
+		| { status: 'loading' }
+		| { status: 'error'; error: string }
+		| { status: 'success' };
 }
