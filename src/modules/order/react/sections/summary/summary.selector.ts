@@ -1,9 +1,16 @@
 import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
 import { AppState } from '@ratatouille/modules/store/store';
 
+/**
+ *
+ * @param state
+ * @returns
+ */
 export const selectSummary = (state: AppState): OrderingDomainModel.Summary => {
-	function findMealById(id: string) {
-		return meals.find((meal) => meal.id === id) ?? null;
+	function findMealById(id: string): OrderingDomainModel.MealSummary | null {
+		const meal = meals.find((meal) => meal.id === id);
+		if (!meal) return null;
+		return { id: meal.id, title: meal.title };
 	}
 
 	const tableId = state.ordering.form.tableId;

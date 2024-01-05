@@ -73,7 +73,7 @@ export namespace OrderingDomainModel {
 		| { status: 'error'; error: string }
 		| { status: 'success' };
 
-	type MealSummary = {
+	export type MealSummary = {
 		id: string;
 		title: string;
 	};
