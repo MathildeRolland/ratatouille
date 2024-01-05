@@ -1,5 +1,5 @@
 import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
-import { selectForm } from '@ratatouille/modules/order/react/sections/guest/form.selector';
+import { selectStep } from '@ratatouille/modules/order/core/selectors/step.selector';
 import { createTestState } from '@ratatouille/modules/testing/tests-environment';
 
 const orderingState: OrderingDomainModel.State = {
@@ -17,10 +17,6 @@ describe('', () => {
 			ordering: orderingState,
 		});
 
-		expect(selectForm(state)).toEqual({
-			guests: [],
-			organizerId: null,
-			tableId: null,
-		});
+		expect(selectStep(state)).toEqual(OrderingDomainModel.Step.GUESTS);
 	});
 });

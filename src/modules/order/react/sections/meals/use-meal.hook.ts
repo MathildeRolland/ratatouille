@@ -1,7 +1,7 @@
 import { MealForm } from '@ratatouille/modules/order/core/form/meal.form';
 import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
 import { orderingSlice } from '@ratatouille/modules/order/core/store/ordering.slice';
-import { selectForm } from '@ratatouille/modules/order/react/sections/guest/form.selector';
+import { selectForm } from '@ratatouille/modules/order/core/selectors/form.selector';
 import { AppState, useAppDispatch } from '@ratatouille/modules/store/store';
 import { useRef, useState } from 'react';
 import { useSelector } from 'react-redux';

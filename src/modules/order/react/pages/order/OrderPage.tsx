@@ -1,7 +1,7 @@
 'use client';
 
 import { OrderingDomainModel } from '@ratatouille/modules/order/core/model/ordering.domain-model';
-import { selectStep } from '@ratatouille/modules/order/react/pages/order/step.selector';
+import { selectStep } from '@ratatouille/modules/order/core/selectors/step.selector';
 import { GuestsSection } from '@ratatouille/modules/order/react/sections/guest/GuestsSection';
 import { MealsSection } from '@ratatouille/modules/order/react/sections/meals/mealsSection';
 import { ReservedSection } from '@ratatouille/modules/order/react/sections/reserved/ReservedSection';
